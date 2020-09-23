@@ -1,10 +1,7 @@
 package project.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -26,5 +23,10 @@ public class Elements {
     @OneToMany(mappedBy = "elements", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JsonBackReference
     private List<Element> list = new ArrayList<>();
+
+
+    public String toString(){
+        return name;
+    }
 
 }

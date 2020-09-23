@@ -7,21 +7,31 @@ import org.springframework.web.bind.annotation.*;
 import project.model.Element;
 import project.repositories.ElementRepository;
 
-@RestController("/element")
+import java.util.Optional;
+
+@RestController
+@RequestMapping("/element")
 public class ElementController {
 
     @Autowired
     private ElementRepository elementRepository;
 
+    @GetMapping("/{id}")
+    public ResponseEntity getElement(@PathVariable Long id){
+        Optional<Element> byId = elementRepository.findById(id);
+        return ResponseEntity.ok(byId.orElse(null));
+    }
 
-    @PostMapping("/add")
-    public ResponseEntity addElement(Element element){
+
+    @PostMapping
+    public ResponseEntity addElement(@RequestParam Element element){
         Element save = elementRepository.save(element);
         return ResponseEntity.ok(save);
     }
 
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity deleteElement(@PathVariable Long id){
+        System.out.println(id);
         elementRepository.deleteById(id);
         return ResponseEntity.ok(true);
     }
@@ -29,7 +39,7 @@ public class ElementController {
 
 
     @PutMapping("/update")
-    public ResponseEntity updateElement(Element element){
+    public ResponseEntity updateElement(@RequestParam Element element){
         elementRepository.deleteById(element.getId());
         Element save = elementRepository.save(element);
         return ResponseEntity.ok(save);

@@ -1,2 +1,8 @@
-D:\2020\Inventory\src\main\java\project\RestController\Controller.java
+D:\2020\Inventory\src\main\java\project\controllers\ElementController.java
+D:\2020\Inventory\src\main\java\project\controllers\DefaultController.java
+D:\2020\Inventory\src\main\java\project\model\Element.java
+D:\2020\Inventory\src\main\java\project\repositories\ElementRepository.java
+D:\2020\Inventory\src\main\java\project\model\Elements.java
+D:\2020\Inventory\src\main\java\project\repositories\ElementsRepository.java
+D:\2020\Inventory\src\main\java\project\controllers\ElementsController.java
 D:\2020\Inventory\src\main\java\project\Inventory.java

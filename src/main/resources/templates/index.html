@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="UTF-8">
+	<title>Inventory</title>
+</head>
+<body>
+    <h1> Inventory </h1>
+	<div>
+
+		<div>
+			<form id="addBox">
+				<input type="text" name="name" placeholder="name new box">
+				<button onclick="addElements()">add</button>
+			</form>
+		</div>
+
+		<div id="box" th:each = " elements : ${elementsList} ">
+			<b th:attr="id = ${elements.getId()}" th:text="${elements.getName()}">  </b>
+			<button th:attr="id = ${elements.getId()}" onclick="deleteElements(id)">delete</button>
+			<br>
+			  <form id="addElement">
+				  <input type="text" name="name" placeholder="name">
+				  <input type="text" name="code" placeholder="code">
+				  <button th:attr="id = ${elements.getId()}" onclick="addElement(id)">add element</button>
+			  </form>
+
+			<div th:each = "element : ${elements.getList()}">
+				<i th:attr="id = ${element.getId()}" th:text="${element.getName() + ' : ' + element.getCode()}"> </i>
+				<button th:attr="id = ${element.getId()}" onclick="deleteElement(id)">del</button>
+				<br>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
