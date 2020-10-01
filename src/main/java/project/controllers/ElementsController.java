@@ -39,7 +39,7 @@ public class ElementsController {
     @PostMapping("/{id}")
     public ResponseEntity addElementToElements(Element element,@PathVariable Long id){
         Optional<Elements> byId = elementsRepository.findById(id);
-        element.setElements(elementsRepository.findById(id).get());
+        element.setGroupId(elementsRepository.findById(id).get());
         element.setId(++globalId);
         System.out.println(element.getId());
         Element saveE = elementRepository.save(element);

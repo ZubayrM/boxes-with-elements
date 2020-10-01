@@ -1,6 +1,5 @@
 function addElement(id){
-
-  let data = $('#addElement').serialize();
+  let data = $('#addElement' + id).serialize();
   $.ajax({
         method: "POST",
         url: "/elements/" + id,
@@ -14,16 +13,31 @@ function deleteElement(id){
        method: "DELETE",
        url: "/element/" + id,
     });
-    setTimeout('window.location.reload()',200)
+    setTimeout('window.location.reload()',200);
 }
 
+function updateElement() {
+    let data = $('#updElement').serialize();
+    $.ajax({
+        method: "PUT",
+        url: "/element/update",
+        data: data
+    });
+    setTimeout('window.location.reload()',200);
+}
 
-function getElement(id){
+function activeUpdate(id) {
     $.ajax({
         method: "GET",
         url: "/element/" + id,
+        success: function (response){
+            let o = document.getElementById("updElement");
+            o[0].value = response.id;
+            o[1].value = response.name;
+            o[2].value = response.code;
+            o[3].value = response.groupId.id;
+        }
     });
-    setTimeout('window.location.reload()',200)
 }
 
 function addElements(){
@@ -42,15 +56,18 @@ function deleteElements(id){
         method: "DELETE",
         url: "/elements/" + id,
     });
-    setTimeout('window.location.reload()',200)
+    setTimeout('window.location.reload()',200);
 }
 
-function getElements(id){
+function getElement(id){
     $.ajax({
         method: "GET",
-        url: "/elements/" + id,
+        url: "/element/" + id,
+        success: function (response){
+            return response;
+        }
     });
-    setTimeout('window.location.reload()',200)
+    setTimeout('window.location.reload()',200);
 }
 
 

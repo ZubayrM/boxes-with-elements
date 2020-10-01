@@ -2,6 +2,7 @@ package project.controllers;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import project.model.Element;
@@ -19,12 +20,13 @@ public class ElementController {
     @GetMapping("/{id}")
     public ResponseEntity getElement(@PathVariable Long id){
         Optional<Element> byId = elementRepository.findById(id);
+        System.out.println(byId.get().getGroupId().getId());
         return ResponseEntity.ok(byId.orElse(null));
     }
 
 
     @PostMapping
-    public ResponseEntity addElement(@RequestParam Element element){
+    public ResponseEntity addElement(Element element){
         Element save = elementRepository.save(element);
         return ResponseEntity.ok(save);
     }
@@ -39,8 +41,8 @@ public class ElementController {
 
 
     @PutMapping("/update")
-    public ResponseEntity updateElement(@RequestParam Element element){
-        elementRepository.deleteById(element.getId());
+    public ResponseEntity updateElement(Element element){
+        System.out.println(element);
         Element save = elementRepository.save(element);
         return ResponseEntity.ok(save);
     }

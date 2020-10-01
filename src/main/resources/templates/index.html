@@ -17,23 +17,40 @@
 				<button onclick="addElements()">add</button>
 			</form>
 		</div>
+		<div>
+			<form id="updElement">
+				<b> update </b>
+				<input id="updId" type="text" value="" name="id" placeholder="id" readonly >
+				<input id="updName" type="text" value="" name="name" placeholder="name">
+				<input id="updCode" type="text" value="" name="code" placeholder="code">
+				<input id="updElId" type="text" value="" name="groupId" style="visibility: hidden">
+				<button onclick="updateElement()">update</button>
+			</form>
+		</div>
 
 		<div id="box" th:each = " elements : ${elementsList} ">
-			<b th:attr="id = ${elements.getId()}" th:text="${elements.getName()}">  </b>
+			<b th:text="${elements.getName()}">  </b>
 			<button th:attr="id = ${elements.getId()}" onclick="deleteElements(id)">delete</button>
 			<br>
-			  <form id="addElement">
+			  <form id="" th:attr="id = ${'addElement' + elements.getId()}">
 				  <input type="text" name="name" placeholder="name">
 				  <input type="text" name="code" placeholder="code">
 				  <button th:attr="id = ${elements.getId()}" onclick="addElement(id)">add element</button>
 			  </form>
 
+
+
 			<div th:each = "element : ${elements.getList()}">
-				<i th:attr="id = ${element.getId()}" th:text="${element.getName() + ' : ' + element.getCode()}"> </i>
-				<button th:attr="id = ${element.getId()}" onclick="deleteElement(id)">del</button>
-				<br>
+				<div th:attr="id = ${element.getId()}">
+					<b th:attr="name = ${element.getName()}" th:text="${element.getName()} + ' : ' "> </b>
+					<i th:attr="name = ${element.getCode()}" th:text="${element.getCode()}"> </i>
+					<button th:attr="id = ${element.getId()}" onclick="activeUpdate(id)">upd</button>
+					<button th:attr="id = ${element.getId()}" onclick="deleteElement(id)">del</button>
+					<br>
+				</div>
 			</div>
 		</div>
 	</div>
+
 </body>
 </html>
