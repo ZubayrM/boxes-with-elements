@@ -33,9 +33,10 @@
 			<button th:attr="id = ${elements.getId()}" onclick="deleteElements(id)">delete</button>
 			<br>
 			  <form id="" th:attr="id = ${'addElement' + elements.getId()}">
+				  <input type="text" name="id" value="" style="visibility: hidden" size="1">
 				  <input type="text" name="name" placeholder="name">
 				  <input type="text" name="code" placeholder="code">
-				  <button th:attr="id = ${elements.getId()}" onclick="addElement(id)">add element</button>
+				  <button th:attr="id = ${ elements.getId()}" onclick="addElement(id)">add element</button>
 			  </form>
 
 

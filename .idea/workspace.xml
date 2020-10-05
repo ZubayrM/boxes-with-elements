@@ -7,22 +7,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b1b42ea-2005-43bd-9f80-d441fb45fc56" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/project/controllers/DefaultControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/project/controllers/ElementControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/project/controllers/ElementsControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/delete.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/insert.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/controllers/DefaultController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/controllers/DefaultController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/project/controllers/ElementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/controllers/ElementController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/project/controllers/ElementsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/controllers/ElementsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/project/model/Element.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/model/Element.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/model/Elements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/model/Elements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project/Inventory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/Inventory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project/controllers/DefaultController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/controllers/DefaultController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/project/controllers/ElementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/controllers/ElementController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/project/controllers/ElementsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/controllers/ElementsController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/project/model/Element.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/model/Element.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project/model/Elements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/model/Elements.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,11 +35,26 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -68,13 +88,23 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/Диплом/DevPut" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="project.controllers" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\2020\jsp-service" />
+      <recent name="D:\2020\jsp-service\src\main\resources" />
       <recent name="D:\2020\Inventory\src\main\resources\static\js" />
       <recent name="D:\2020\Inventory\src\main\resources\static\css\js" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\2020\Inventory\src\main\resources\static\js" />
@@ -97,6 +127,68 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.Inventory">
+    <configuration name="ElementControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Inventory" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="project.controllers" />
+      <option name="MAIN_CLASS_NAME" value="project.controllers.ElementControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElementControllerTest.addElementToElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Inventory" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="project.controllers" />
+      <option name="MAIN_CLASS_NAME" value="project.controllers.ElementControllerTest" />
+      <option name="METHOD_NAME" value="addElementToElements" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElementControllerTest.updateElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Inventory" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="project.controllers" />
+      <option name="MAIN_CLASS_NAME" value="project.controllers.ElementControllerTest" />
+      <option name="METHOD_NAME" value="updateElement" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElementsControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Inventory" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="project.controllers" />
+      <option name="MAIN_CLASS_NAME" value="project.controllers.ElementsControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Inventory" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="Inventory" />
       <extension name="coverage">
@@ -184,12 +276,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.ElementControllerTest" />
+      <item itemvalue="JUnit.ElementControllerTest.addElementToElements" />
+      <item itemvalue="JUnit.ElementControllerTest.updateElement" />
+      <item itemvalue="JUnit.ElementsControllerTest" />
       <item itemvalue="Spring Boot.Inventory" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.57" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.Inventory" />
+        <item itemvalue="JUnit.ElementControllerTest.updateElement" />
+        <item itemvalue="JUnit.ElementControllerTest" />
+        <item itemvalue="JUnit.ElementsControllerTest" />
+        <item itemvalue="JUnit.ElementControllerTest.addElementToElements" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +307,9 @@
       <workItem from="1600874503435" duration="14370000" />
       <workItem from="1601051551849" duration="8773000" />
       <workItem from="1601574772622" duration="9406000" />
-      <workItem from="1601917964355" duration="3225000" />
+      <workItem from="1601917964355" duration="3254000" />
+      <workItem from="1601922729276" duration="9019000" />
+      <workItem from="1601932239914" duration="2069000" />
     </task>
     <task id="LOCAL-00001" summary="23.09.20">
       <created>1600889868815</created>
@@ -216,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600889868815</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="05.10.20">
+      <created>1601922303254</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601922303255</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +346,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="23.09.20" />
-    <option name="LAST_COMMIT_MESSAGE" value="23.09.20" />
+    <MESSAGE value="05.10.20" />
+    <option name="LAST_COMMIT_MESSAGE" value="05.10.20" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

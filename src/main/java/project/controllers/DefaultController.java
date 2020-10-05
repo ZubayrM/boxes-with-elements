@@ -16,8 +16,6 @@ class DefaultController {
     public String init(Model model){
 
         Iterable<Elements> all = elementsRepository.getAll();
-
-
         model.addAttribute("elementsList", all);
         return "index";
     }

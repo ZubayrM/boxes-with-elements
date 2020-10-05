@@ -10,8 +10,6 @@ import project.repositories.ElementsRepository;
 @RequestMapping("/elements")
 public class ElementsController {
 
-    private long globalId = 0;
-
     @Autowired
     private ElementsRepository elementsRepository;
 
@@ -25,7 +23,7 @@ public class ElementsController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity delete(@PathVariable Long id){
+    public ResponseEntity deleteElements(@PathVariable Long id){
         elementsRepository.deleteById(id);
         return ResponseEntity.ok(true);
     }

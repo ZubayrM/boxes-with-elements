@@ -24,23 +24,17 @@ public class ElementController {
     @GetMapping("/{id}")
     public ResponseEntity getElement(@PathVariable Long id){
         Optional<Element> byId = elementRepository.findById(id);
-        System.out.println(byId.get().getGroup().getId());
         return ResponseEntity.ok(byId.orElse(null));
     }
 
 
     @PostMapping("/{id}")
     public ResponseEntity addElementToElements(Element element,@PathVariable Long id){
-        Optional<Elements> byId = elementsRepository.findById(id);
         element.setGroup(elementsRepository.findById(id).get());
-        Element saveE = elementRepository.save(element);
+        System.out.println(element.getId());
+        Element saveElement = elementRepository.save(element);
+        System.out.println(saveElement.getId());
 
-        if (byId.isPresent()){
-            Elements elements = byId.get();
-            elements.getList().add(saveE);
-            Elements save = elementsRepository.save(elements);
-            return ResponseEntity.ok(save);
-        }
         return ResponseEntity.ok(null);
     }
 
