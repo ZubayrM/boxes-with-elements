@@ -20,7 +20,7 @@ public class Elements {
 
     private String name;
 
-    @OneToMany(mappedBy = "groupId", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "group", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JsonBackReference
     private List<Element> list = new ArrayList<>();
 

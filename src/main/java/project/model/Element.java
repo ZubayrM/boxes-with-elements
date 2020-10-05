@@ -22,9 +22,9 @@ public class Element {
     private String code;
 
     @ManyToOne
-    @JoinColumn(name = "elements_id", nullable = false)
+    @JoinColumn(name = "group_id", nullable = false)
     @JsonManagedReference
-    private Elements groupId;
+    private Elements group;
 
     public String toString(){
         return name;

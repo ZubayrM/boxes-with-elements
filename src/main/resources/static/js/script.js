@@ -2,7 +2,7 @@ function addElement(id){
   let data = $('#addElement' + id).serialize();
   $.ajax({
         method: "POST",
-        url: "/elements/" + id,
+        url: "/element/" + id,
         data:  data
    });
   setTimeout('window.location.reload()',200);
@@ -35,7 +35,7 @@ function activeUpdate(id) {
             o[0].value = response.id;
             o[1].value = response.name;
             o[2].value = response.code;
-            o[3].value = response.groupId.id;
+            o[3].value = response.group.id;
         }
     });
 }
