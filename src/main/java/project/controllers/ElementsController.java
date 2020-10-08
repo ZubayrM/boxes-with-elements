@@ -13,9 +13,6 @@ public class ElementsController {
     @Autowired
     private ElementsRepository elementsRepository;
 
-
-
-
     @PostMapping
     public ResponseEntity addElements(Elements elements){
         Elements save = elementsRepository.save(elements);

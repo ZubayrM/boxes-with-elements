@@ -31,11 +31,8 @@ public class ElementController {
     @PostMapping("/{id}")
     public ResponseEntity addElementToElements(Element element,@PathVariable Long id){
         element.setGroup(elementsRepository.findById(id).get());
-        System.out.println(element.getId());
-        Element saveElement = elementRepository.save(element);
-        System.out.println(saveElement.getId());
-
-        return ResponseEntity.ok(null);
+        elementRepository.save(element);
+        return ResponseEntity.ok(true);
     }
 
     @DeleteMapping("/{id}")
@@ -46,7 +43,7 @@ public class ElementController {
 
     @PutMapping("/update")
     public ResponseEntity updateElement(Element element){
-        Element save = elementRepository.save(element);
-        return ResponseEntity.ok(save);
+        elementRepository.save(element);
+        return ResponseEntity.ok(true);
     }
 }

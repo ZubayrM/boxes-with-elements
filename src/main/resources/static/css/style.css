@@ -18,19 +18,22 @@ b{
     background-color: antiquewhite;
     margin: 20px;
     border: antiquewhite;
-    padding-right: 20px;
+    padding: 20px;
     float: left;
 }
 
 #updElement{
+    position: fixed;
+    top: 100px;
+    left: 700px;
     width: 60px;
     background: bisque;
-    padding-right: 20px;
+    padding: 20px;
     float: right;
 }
 #addBox{
     background: antiquewhite;
-    padding-right: 20px;
+    padding: 20px;
     float: left;
     width: 200px;
 }
